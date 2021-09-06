@@ -1,7 +1,7 @@
 from pyowm import OWM
 from colorama import Fore, Back
 from pyowm.utils.config import get_default_config
-from tok import tok as token
+from token_file import token as token
 
 config_dict = get_default_config()
 config_dict['language'] = 'ru'  # your language here, eg. Russian
