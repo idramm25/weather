@@ -1,10 +1,11 @@
 from pyowm import OWM
 from colorama import Fore, Back
 from pyowm.utils.config import get_default_config
+from tok import tok as token
 
 config_dict = get_default_config()
 config_dict['language'] = 'ru'  # your language here, eg. Russian
-owm = OWM('97deaf0b7a4ebb9fbe0dee1a1be04b04', config_dict)
+owm = OWM(token, config_dict)
 mgr = owm.weather_manager()
 place = input("Type place?: ")
 
